@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Algoa Bus</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid nav-bar sticky-top px-4 py-2 py-lg-0">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a href="" class="navbar-brand p-0 d-flex align-items-center">
+                    <img src="img/Algoa.png" alt="Logo" style="height: 50px; margin-right: 10px;">
+                    <h1 class="display-6 text-dark m-0">Algoa Buses</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <a href="blog.html" class="nav-item nav-link">POPIA</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <div class="team-icon d-none d-xl-flex justify-content-center me-3">
+                        <!-- Facebook Link -->
+                        <a class="btn btn-square btn-light rounded-circle mx-1" href="https://www.facebook.com/AlgoaBusCompany" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <!-- LinkedIn Link -->
+                        <a class="btn btn-square btn-light rounded-circle mx-1" href="https://www.linkedin.com/company/algoa-bus/" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar & Hero End -->
+        <!-- Carousel Start -->
+        <div class="header-carousel owl-carousel">
+            <div class="header-carousel-item">
+                <img src="img/a.jpg" class="img-fluid w-100" alt="Image">
+                <div class="carousel-caption">
+                    <div class="container align-items-center py-4">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-xl-7 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1s" style="animation-delay: 1s;">
+                                <div class="text-start">
+                                    <h4 class="text-primary text-uppercase fw-bold mb-4">Welcome To Algoa buses</h4>
+                                    <h1 class="display-4 text-uppercase text-white mb-4">Affordable, Comfortable, and Always on Time</h1>
+                                    <p class="mb-4 fs-5 text-white">
+                                        Algoa Bus Company provides safe, reliable, and affordable public transport across Nelson Mandela Bay, connecting key areas in Gqeberha and beyond.
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="col-xl-5 fadeInRight animated" data-animation="fadeInRight" data-delay="1s" style="animation-delay: 1s;">
+                                <div class="ticket-form p-5">
+                                    <h2 class="text-dark text-uppercase mb-4">Hire Us</h2>
+                                    <form>
+                                        <div class="row g-4">
+                                            <div class="col-12">
+                                                <input type="text" class="form-control border-0 py-2" id="name" placeholder="Your Name">
+                                            </div>
+                                            <div class="col-12 col-xl-6">
+                                                <input type="email" class="form-control border-0 py-2" id="email" placeholder="Your Email">
+                                            </div>
+                                            <div class="col-12 col-xl-6">
+                                                <input type="tel" class="form-control border-0 py-2" id="phone" placeholder="Phone">
+                                            </div>
+                                            <div class="col-12">
+                                                <select class="form-select border-0 py-2" aria-label="Default select example">
+                                                    <option selected>Select Packages</option>
+                                                    <option value="1">Short duration and long distance bus</option>
+                                                    <option value="2">Outlying areas </option>
+                                                    <option value="3">Museums,Trips,Funerals, etc.</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12">
+                                                <input class="form-control border-0 py-2" type="date">
+                                            </div>
+                                            <div class="col-12">
+                                                <input type="number" class="form-control border-0 py-2" id="number" placeholder="Guest">
+                                            </div>
+                                            <div class="col-12">
+                                                <button onclick="location.href='mailto:admin@algoabus.co.za?subject=Hello&body=I%20have%20a%20question.';" class="btn btn-primary w-100 py-3">Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-carousel-item">
+                <img src="img/a.jpg" class="img-fluid w-100" alt="Image">
+                <div class="carousel-caption">
+                    <div class="container py-4">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-xl-7 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1s" style="animation-delay: 1s;">
+                                <div class="text-start">
+                                    <h4 class="text-primary text-uppercase fw-bold mb-4">Welcome To Algoa buses</h4>
+                                    <h1 class="display-4 text-uppercase text-white mb-4">Affordable, Comfortable, and Always on Time</h1>
+                                    <p class="mb-4 fs-5 text-white">
+                                        Algoa Bus Company provides safe, reliable, and affordable public transport across Nelson Mandela Bay, connecting key areas in Gqeberha and beyond.
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="col-xl-5 fadeInRight animated" data-animation="fadeInRight" data-delay="1s" style="animation-delay: 1s;">
+                                <div class="ticket-form p-5">
+                                    <h2 class="text-dark text-uppercase mb-4">Hire Us</h2>
+                                    <form>
+                                        <div class="row g-4">
+                                            <div class="col-12">
+                                                <input type="text" class="form-control border-0 py-2" id="name" placeholder="Your Name">
+                                            </div>
+                                            <div class="col-12 col-xl-6">
+                                                <input type="email" class="form-control border-0 py-2" id="email" placeholder="Your Email">
+                                            </div>
+                                            <div class="col-12 col-xl-6">
+                                                <input type="tel" class="form-control border-0 py-2" id="phone" placeholder="Phone">
+                                            </div>
+                                            <div class="col-12">
+                                                <select class="form-select border-0 py-2" aria-label="Default select example">
+                                                    <option selected>Select Packages</option>
+                                                    <option value="1">Short duration and long distance bus</option>
+                                                    <option value="2">Outlying areas </option>
+                                                    <option value="3">Museums,Trips,Funerals, etc.</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12">
+                                                <input class="form-control border-0 py-2" type="date">
+                                            </div>
+                                            <div class="col-12">
+                                                <input type="number" class="form-control border-0 py-2" id="number" placeholder="Guest">
+                                            </div>
+                                            <div class="col-12">
+                                                <button onclick="location.href='mailto:admin@algoabus.co.za?subject=Hello&body=I%20have%20a%20question.';" class="btn btn-primary w-100 py-3">Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel End -->
+        <!-- Feature Start -->
+        <div class="container-fluid feature py-5">
+
+        </div>
+        <!-- Feature End -->
+        <!-- About Start -->
+        <div class="container-fluid about pb-5">
+            <div class="container pb-5">
+                <div class="row g-5">
+                    <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div>
+                            <h4 class="text-primary">About Us</h4>
+                            <h1 class="display-5 mb-4">Welcome to Algoa Bus</h1>
+                            <p class="mb-5">
+                                Algoa Bus Company, headquartered in Gqeberha (Port Elizabeth), South Africa, has been a significant part of public transport in the Eastern Cape since its founding in 1879. Serving Nelson Mandela Bay and nearby towns like Uitenhage and Despatch, Algoa Bus offers a reliable network of routes connecting central city areas, residential suburbs, and major community destinations such as the beachfront, shopping complexes, and universities. With services designed to accommodate daily commuters and regional travelers alike, the company emphasizes accessibility and efficiency, including features like a contactless smart card system for convenient travel.
+                            </p>
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <div class="me-3"><i class="fas fa-lock text-primary fa-2x"></i></div>
+                                        <div>
+                                            <h4>Safety and Security is priority</h4>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <div class="me-3"><i class="fas fa-hand-holding-usd fa-3x text-primary"></i></div>
+                                        <div>
+                                            <h4>Affordable with regulated fares</h4>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <div class="me-3"><i class="fas fa-thumbs-up text-primary fa-2x"></i></div>
+                                        <div>
+                                            <h4>Reliable and convenient</h4>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <div class="me-3"><i class="fas fa-bus text-primary fa-2x"></i></div>
+                                        <div>
+                                            <h4>News Addition! </h4>
+                                            <h5>Small group rental</h5>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="position-relative rounded">
+                            <div class="rounded" style="margin-top: 40px;">
+                                <div class="row g-0">
+                                    <div class="col-lg-12">
+                                        <div class="rounded mb-4">
+                                            <img src="img/hire.png" class="img-fluid rounded w-100" alt="">
+                                        </div>
+                                        <div class="row gx-4 gy-0">
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rounded bg-primary p-4 position-absolute d-flex justify-content-center" style="width: 90%; height: 80px; top: -40px; left: 50%; transform: translateX(-50%);">
+                                <h3 class="mb-0 text-white">145 Years Experiance</h3>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-shrink-0">
+                            <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="about.html">Read more</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+        <!-- Service Start -->
+        <div class="container-fluid service py-5">
+            <div class="container service-section py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Our Service</h4>
+                    <h1 class="display-5 text-white mb-4">Explore Algoa bus</h1>
+                    <p class="mb-0 text-white">
+                        Algoa Bus Company offers public transport services across the Nelson Mandela Bay area
+                    </p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-0 col-md-1 col-lg-2 col-xl-2"></div>
+                    <div class="col-md-10 col-lg-8 col-xl-8 wow fadeInUp" data-wow-delay="0.2s">
+
+                    </div>
+                    <div class="col-0 col-md-1 col-lg-2 col-xl-2"></div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item p-4">
+                            <div class="service-content">
+                                <div class="mb-4">
+                                    <i class="fas fa-credit-card fa-3x text-primary"></i>
+                                </div>
+                                <a href="#" class="h4 d-inline-block mb-3">Smart Card Payment System</a>
+
+                                <ul style="color: black;">
+                                    <li>Pre-load up to R500 to use for traveling</li>
+                                    <li>Safe, secure, & risk-free</li>
+                                    <li>Never worry about carrying cash again</li>
+                                    <li>The most convenient way to travel</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item p-4">
+                            <div class="service-content">
+                                <div class="mb-4">
+                                    <i class="fas fa-wifi fa-3x text-primary"></i>
+                                </div>
+                                <a href="#" class="h4 d-inline-block mb-3">Free Wifi</a>
+                                <p class="mb-0">
+                                    Algoa Bus offers free Wi-Fi on certain routes through advertising partnerships, making it easy for passengers, especially students and professionals, to stay connected during their commute.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="service-item p-4">
+                            <div class="service-content">
+                                <div class="mb-4">
+                                    <i class="fas fa-door-closed fa-4x"></i>
+                                </div>
+                                <a href="#" class="h4 d-inline-block mb-3">Safety and Security</a>
+                                <p class="mb-0">
+                                    Algoa Bus prioritizes passenger safety, with security measures like CCTV surveillance on select routes, adding a layer of security for riders and reducing incidents
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="service-item p-4">
+                            <div class="service-content">
+                                <div class="mb-4">
+                                    <i class="fas fa-hand-holding-usd fa-3x text-primary"></i>
+                                </div>
+                                <a href="#" class="h4 d-inline-block mb-3">Affordable Price</a>
+                                <p class="mb-0">
+                                    Algoa Bus keeps fares reasonable, with additional discounts for senior citizens.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+        <div class="container-fluid feature py-5">
+
+        </div>
+        <!-- Ticket Packages Start -->
+
+        <div class="row g-4">
+            <!-- Empty column for spacing -->
+            <div class="col-0 col-md-1 col-lg-2 col-xl-2"></div>
+
+            <!-- Main content column -->
+            <div class="col-md-10 col-lg-8 col-xl-8 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="service-days p-4 text-center">
+                    <!-- Center-aligned Main Heading -->
+                    <h4 class="mb-4 fw-bold text-primary">Algoa Bus Operating Hours</h4>
+
+                    <!-- Timetable Rows -->
+                    <div class="py-2 border-bottom border-top d-flex align-items-center justify-content-between flex-wrap">
+                        <h4 class="mb-0 pb-2 pb-sm-0">Monday - Friday</h4>
+                        <p class="mb-0"><i class="fas fa-clock text-primary me-2"></i>08:00 AM - 15:00 PM</p>
+                    </div>
+                    <div class="py-2 border-bottom d-flex align-items-center justify-content-between flex-wrap">
+                        <h4 class="mb-0 pb-2 pb-sm-0">Saturday - Sunday</h4>
+                        <p class="mb-0"><i class="fas fa-clock text-primary me-2"></i>08:00 AM - 15:00 PM</p>
+                    </div>
+                    <div class="py-2 border-bottom d-flex align-items-center justify-content-between flex-wrap">
+                        <h4 class="mb-0">Motherwell</h4>
+                        <p class="mb-0"><i class="fas fa-clock text-primary me-2"></i>09:30 AM - 14:30 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Ticket Packages End -->
+        <!-- Attractions Start -->
+        <!-- Attractions End -->
+        <!-- Gallery Start -->
+        <!-- Gallery End -->
+        <!-- Blog Start -->
+        <!-- Blog End -->
+        <!-- Team Start -->
+        <!-- Team End -->
+        <!-- Testimonial Start -->
+        <!-- Testimonial End -->
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-3 col-lg-3 ">
+                        <div class="footer-item">
+                            <a href="" class="navbar-brand p-0 d-flex align-items-center">
+                                <img src="img/Algoa.png" alt="Logo" style="height: 50px; margin-right: 10px;">
+                                <h4 class="text-white mb-4">Algoa bus</h4>
+                                <!-- <img src="img/logo.png" alt="Logo"> -->
+                            </a>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                                <p class="text-white mb-0">
+                                    Perl Depot:
+                                    85 Perl Road, Korsten, Port Elizabeth
+                                    041 404 1200
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                                <p class="text-white mb-0">
+                                    Uitenhage Depot:  Mitchell Street, Uitenhage Dwesi Depot: Ziyabuya Centre, Kwadwesi, Port Elizabeth
+
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                                <p class="text-white mb-0">
+                                    Motherwell Depot:
+                                    Maku Street, Motherwell, Port Elizabeth
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                                <p class="text-white mb-0">
+                                    Bay Depot:
+                                    Struan Way, Struandale, Port Elizabeth
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                                <p class="text-white mb-0">
+                                    Kwadwesi Depot:
+                                    Ziyabuya Centre, Kwadwesi, Port Elizabeth
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Quick Links</h4>
+                            <a href="about.html"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                            <a href="service.html"><i class="fas fa-angle-right me-2"></i> Services</a>
+                            <a href="blog.html"><i class="fas fa-angle-right me-2"></i> POPIA</a>
+                            <a href="con"><i class="fas fa-angle-right me-2"></i> Contact us</a>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3 col-lg-3 ">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Special Hire</h4>
+                            <p class="text-center mb-0">
+                                <b>Perl Depot:</b>
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-phone-alt text-primary me-3"></i>
+                                <p class="text-white mb-0">041 404 1313</p>
+                            </div>
+                            <p class="text-center mb-0">
+                                <b>Bay Depot:</b>
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-phone-alt text-primary me-3"></i>
+                                <p class="text-white mb-0">041 404 1287</p>
+                            </div>
+                            <p class="text-center mb-0">
+                                <b>Uitenhage Depot:</b>
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-phone-alt text-primary me-3"></i>
+                                <p class="text-white mb-0">041 992 4419</p>
+                            </div>
+                            <p class="text-center mb-0">
+                                <b>Motherwell Depot:</b>
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-phone-alt text-primary me-3"></i>
+                                <p class="text-white mb-0">041 404 1246</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Complaints</h4>
+                            <div class="d-flex align-items-center mb-4">
+                                <i class="fa fa-phone-alt text-primary me-3"></i>
+                                <p class="text-white mb-0">080 1421 444</p>
+                            </div>
+
+                            <h4 class="text-white mb-4">Enquiries</h4>
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-phone-alt text-primary me-3"></i>
+                                <p class="text-white mb-0">080 1421 444</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer End -->
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Algoa Bus</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-body">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">SM Solutions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
